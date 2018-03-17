@@ -11,7 +11,7 @@
         // Find other table rows (except the filter rows)
         var otherRows = document.querySelectorAll("tr[position].selected:not([position=" + selectedOption + "])");
         otherRows.forEach(function (row) {
-            // Remove other rows that have 'selected' class if they have this class
+            // Remove other rows that have 'selected' class
             if (row.classList.contains('selected'))
                 row.classList.remove('selected');
         });
