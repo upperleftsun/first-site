@@ -183,7 +183,16 @@ table tr th, table tr td
 table tr td
 { background: #F0EFE2;
   color: #47433F;
-  border-top: 1px solid #FFF;}
+  border-top: 1px solid #FFF;
+  will-change: background, color;
+  transition: background .28s ease-in-out, color .25s ease;
+}
+
+table tr.selected td {
+  background: #737373;
+  color: #fff;
+  border-top: 1px solid transparent;
+}
 
 /*.....form submit.....*/
 
